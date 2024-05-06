@@ -54,9 +54,13 @@ In this terminal you can do things like: eth.getBalance(eth.accounts[0]) to see 
 * Send ether:
 
   eth.sendTransaction({from:'0x25e459058DEcbfC44383f78F15eAD5A85489BabA', to:'0xC7C180FaCFB3926576824365833615409cc29284', value: web3.toWei(0.05, "ether"), gas:21001});
+
   Another more secure way would be to use:
+
   cast send -r localhost:8000 --private-key $PKEY 0x8D512169343cc6e108a8bB6ec5bc116C416eFc8E --value 0.01ether
+
   This was not working in my machine, therefore I unlocked the accounts completely and used the above approach.
+  
 
 * Deploy a contract:
 Follow tutorial on: https://geth.ethereum.org/docs/interacting-with-geth/javascript-console-contracts
