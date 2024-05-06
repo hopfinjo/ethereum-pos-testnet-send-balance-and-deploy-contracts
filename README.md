@@ -1,6 +1,6 @@
 # ethereum-pos-testnet-send-balance-and-deploy-contracts
 This projects builds on rzmahmood's "ethereum-pos-testnet" repository. I adapted the code to allocate ether to the accounts and be able to send transactions within the testnet.
-Please follow following steps to expand his testnet, so that you can allocate ether to the created accounts, and send transactions from within the geth js terminals.
+Please follow following steps to expand the testnet, so that you can allocate ether to the created accounts, and send transactions from within the geth js terminals.
 My scripts unlock each account when creating them. This is not a good security practice and is not advised for real world networks.
 Notes: I ran this on a Windows Machine in an Ubuntu app. Ensure that all correct versions are installed. 
 
@@ -17,7 +17,7 @@ Download the two files "create_account.sh" & "start_network_without_acc.sh" from
 
 ![image](https://github.com/hopfinjo/ethereum-pos-testnet-send-balance-and-deploy-contracts/assets/76743011/c4b4b32e-6c6b-4449-9df1-044a5437cb2c)
 
-The password used is "1234"
+The password used is "1234". You do not need this anywhere.
 
 *  Add created accounts to the genesis alloc section. This will give the accounts eth, so that you can make transactions with them.
   Ensure high number for allocated per account. Number is in hex in json file.
